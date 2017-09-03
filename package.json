@@ -1,0 +1,9 @@
+{
+  "name": "items-promise",
+  "version": "1.0.0",
+  "description": "Bare minimum async methods using promises",
+  "main": "lib/index.js",
+  "repository": "https://github.com/pi0/items-promise",
+  "author": "Pooya Parsa <pooya@pi0.ir>",
+  "license": "MIT"
+}
