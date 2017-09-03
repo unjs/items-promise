@@ -13,9 +13,7 @@ OR using NPM
 
 ```js
 const { serial, parallel } = require('items-promise')
-
 // OR
-
 import { serial, parallel } from 'items-promise'
 ```
 
@@ -32,8 +30,7 @@ Return value is of type `Promise<*>` which resolves to the **last** fn result.
 
 Run all tasks in parallel by calling `fn(tasks)` and await using `Promise.all`.
 
-Return value is of type `Promise<Array[*]>` which resolves to results of **all** fns in an array.
-
+Return value is of type `Promise<*[]>` which resolves to results of **all** fns in an array.
 
 # License
 Released under The MIT [LICENSE](./LICENSE)
