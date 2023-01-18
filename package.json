@@ -2,8 +2,40 @@
   "name": "items-promise",
   "version": "1.0.0",
   "description": "Bare minimum async methods using promises",
-  "main": "lib/index.js",
-  "repository": "https://github.com/pi0/items-promise",
   "author": "Pooya Parsa <pooya@pi0.ir>",
-  "license": "MIT"
+  "repository": "unjs/items-promise",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "vitest dev",
+    "lint": "eslint --ext .ts,.js,.mjs,.cjs .",
+    "prepack": "unbuild",
+    "release": "pnpm test && standard-version && git push --follow-tags && pnpm publish",
+    "test": "pnpm lint && vitest run --coverage"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^11.0.0",
+    "@vitest/coverage-c8": "^0.27.2",
+    "eslint": "^8.32.0",
+    "standard-version": "^9.5.0",
+    "typescript": "^4.9.4",
+    "unbuild": "^1.1.1",
+    "vitest": "^0.27.2"
+  },
+  "packageManager": "pnpm@7.25.0"
 }
