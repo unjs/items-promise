@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Bare minimum async methods using promises",
   "author": "Pooya Parsa <pooya@pi0.ir>",
+  "contributors": [
+    "Nozomu Ikuta <16436160+NozomuIkuta@users.noreply.github.com>"
+  ],
   "repository": "unjs/items-promise",
   "license": "MIT",
   "sideEffects": false,
