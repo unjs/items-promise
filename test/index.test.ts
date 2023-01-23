@@ -6,7 +6,7 @@ describe('items-promise', () => {
     const tasks = [1, '2', 3, 4]
 
     const result = await serial(tasks, (task, previous) => {
-      return Promise.resolve(Number(task) + Number(previous))
+      return Promise.resolve(Number(task) + Number(previous === null ? 0 : previous))
     })
 
     expect(result).equal(10)
