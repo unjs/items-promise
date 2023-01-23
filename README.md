@@ -26,10 +26,10 @@ Import:
 
 ```js
 // ESM
-import { serial, parallel } from 'items-promise'
+import { serial, parallel } from "items-promise"
 
 // CommonJS
-const { serial, parallel } = require('items-promise')
+const { serial, parallel } = require("items-promise")
 ```
 
 `tasks` should be always an array and `fn` should be a function which returns a `Promise`.
@@ -46,10 +46,11 @@ Run all tasks in parallel by calling `fn(tasks)` and await using `Promise.all`.
 
 Return value is of type `Promise<*[]>` which resolves to results of **all** `fn`s in the array.
 
-## 💻 Development
+## Development
 
 - Clone this repository
-- Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable` (use `npm i -g corepack` for Node.js < 16.10)
+- Install latest LTS version of [Node.js](https://nodejs.org/en/)
+- Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable`
 - Install dependencies using `pnpm install`
 - Run interactive tests using `pnpm dev`
 
@@ -60,6 +61,7 @@ Made with 💛
 Published under [MIT License](./LICENSE).
 
 <!-- Badges -->
+
 [npm-version-src]: https://img.shields.io/npm/v/items-promise?style=flat-square
 [npm-version-href]: https://npmjs.com/package/items-promise
 
